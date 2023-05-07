@@ -1,0 +1,5 @@
+[all:vars]
+ansible_ssh_user=ubuntu
+[webserver]
+deployment_server ansible_ssh_host=13.232.173.52 
+
