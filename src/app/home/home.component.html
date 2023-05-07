@@ -1,0 +1,31 @@
+<div class="container top-card">
+  <div class="card p-5">
+    <div class="card-header">
+      <div class="card-title">
+        <h3>Add List</h3>
+      </div>
+    </div>
+    <div class="card-body">
+      <div *ngFor="let item of numberList"> {{item}}</div>
+      <button (click)="addElement()" >diziye ekle</button>
+    </div>
+  </div>
+
+  <div class="card p-5">
+    <div class="card-header">
+      <div class="card-title">
+
+        <h3>İncrement,Decremenet</h3>
+      </div>
+    </div>
+    <div class="card-body">
+
+      <p>{{number}}</p>
+      <div class="btn-group btn-group-toggle">
+        <button class="btn-primary" (click)="increment()"> increment</button>
+        <button class="btn-primary" (click)="decrement()"> decrement</button>
+      </div>
+    </div>
+  </div>
+</div>
+<basic-table></basic-table>
